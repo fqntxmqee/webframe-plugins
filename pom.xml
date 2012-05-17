@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.webframe</groupId>
+		<artifactId>wf-parent</artifactId>
+		<version>1.2.0</version>
+	</parent>
+
+	<groupId>org.webframe.plugins</groupId>
+	<artifactId>plugin</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>webframe-plugin</name>
+	<url>http://fqntxmqee.github.com</url>
+
+		
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<webframe.version>1.2.0</webframe.version>
+	</properties>
+	
+	<licenses>
+		<license>
+			<name>GNU GENERAL PUBLIC LICENSE, Version 3</name>
+			<url>http://www.gnu.org/licenses/gpl.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>ssh://git@github.com/fqntxmqee/webframe-plugins</url>
+		<connection>scm:git:ssh://git@github.com/fqntxmqee/webframe-plugins</connection>
+		<developerConnection>scm:git:ssh://git@github.com/fqntxmqee/webframe-plugins</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>fqntxmqee</id>
+			<name>Guoqing Huang</name>
+			<email>guoqing.huang@foxmail.com</email>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.webframe</groupId>
+			<artifactId>wf-web</artifactId>
+			<version>${webframe.version}</version>
+		</dependency>
+	</dependencies>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.webframe</groupId>
+				<artifactId>wf-struts</artifactId>
+				<version>${webframe.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.webframe</groupId>
+				<artifactId>wf-web-springmvc</artifactId>
+				<version>${webframe.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
