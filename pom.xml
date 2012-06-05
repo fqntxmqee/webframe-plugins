@@ -9,7 +9,7 @@
 
 	<groupId>org.webframe.plugins</groupId>
 	<artifactId>plugin</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>webframe-plugin</name>
